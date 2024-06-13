@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Игра Мемори</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="vendor/react.development.js"></script>
+  <script src="vendor/react-dom.development.js"></script>
+  <script src="vendor/babel.min.js"></script>
+  <!--подключите библиотеки React, ReactDOM и BabelJS-->
+  <script src="data.js"></script>
+  <!--подключите файл данных-->
+</head>
+<body>
+  <div id="root">Корневой элемент</div>
+  <script type="text/babel">
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+    root.render(<App images={images} visibleItems={visibleItems} finishedItems={finishedItems}/>);
+
+    function App({images = [], visibleItems = [], finishedItems = []}) {
+      return (
+        <section class="game container">
+            <Grid images={images} visibleItems={visibleItems} finishedItems={finishedItems}/>
+          </section>
+      );
+    }
+
+    function Grid({images, visibleItems, finishedItems}) {
+      return (
+        <ul className="cards">
+          {images.map((item) => (
+            <Card
+              key={item.id}
+              url={item.url}
+              description={item.description}
+              isShowed={visibleItems.includes(item.id)}
+              isFinished={finishedItems.includes(item.id)}
+            />
+          ))}
+        </ul>
+      );
+    }
+
+    function Card ({id, url, desc, isShowed = false, isFinished = true}) {
+      const className = `card ${isShowed ? 'card-show' : ''}${isFinished ? 'card-finished' : ''}`;
+      return (
+        <li className={className}>
+          <img src={url} width="204" height="144" alt={description}/>
+        </li>
+      );
+    }
+  </script>
+</body>
+</html>
