@@ -1,0 +1,129 @@
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 120px;
+}
+
+.header {
+    background-image: url(images/fon.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-line {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    font-family: Istok Web;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.logo {
+    margin-right: 100px;
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 100px;
+    transition: color 0.1s;
+}
+
+.menu-item:hover {
+    color: #ffffff9e;
+}
+
+.header-big-text {
+    font-family: Kenia;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 150px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.header-text {
+    font-family: Istok Web;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-content-left {
+    margin-right: 400px;
+}
+
+.header-content-right {
+    margin-bottom: 0;
+}
+
+.header-content-right img {
+    width: 380px;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.image-phone {
+    z-index: 2;
+}
+
+.image-cabel {
+    z-index: 1;
+    margin-top: -135px;
+    margin-left: -17px;
+
+}
+
+.music {
+    background-color: rgba(213, 48, 5, 1);
+    height: 100vh;
+}
+
+.music-title {
+    font-family: Karla;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.music-content {
+    display: flex;
+}
+
+.music-buttins {
+    font-family: Karla;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    display: block;
+    align-content: flex-start;
+
+}
+
+.music-image {
+
+    padding-right: 0;
+}

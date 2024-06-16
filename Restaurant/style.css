@@ -1,0 +1,596 @@
+.body {
+    margin: 0;
+}
+
+.container {
+    margin: 0px 166px;
+
+}
+
+.header {
+    background-image: url(images/back.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header-line {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 25px;
+    transition: color 0.15s linear;
+}
+
+.nav-item:hover {
+    color: #fbb77f;
+}
+
+.cart {
+    position: relative;
+    border-right: 1px solid rgba(255, 255, 255, 1);
+    padding-right: 10px;
+    height: 50px;
+
+}
+
+.cart-img {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+
+.num {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s linear;
+}
+
+.num:hover {
+    color: #fbb77f;
+}
+
+.phone-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.phone-holder {
+    display: flex;
+}
+
+.button {
+    background-color: #FF7400;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: 700;
+    transition: background-color 0.2s linear;
+}
+
+.button:hover {
+    background-color: #ff7300b4;
+}
+
+.header-title {
+    font-family: Tinos;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(214, 126, 53, 1);
+    position: absolute;
+    left: 0;
+    margin-top: 222px;
+    margin-bottom: 12px;
+}
+
+.header-down {
+    position: relative;
+}
+
+.header-suptitle {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header-suptitle::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: #fff;
+    top: 140px;
+    left: 56px;
+}
+
+.header-suptitle::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: #fff;
+    top: 140px;
+    left: 312px;
+}
+
+.header-button {
+    color: #fff;
+    background-color: rgba(255, 116, 0, 1);
+    text-decoration: none;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    transition: color 0.2s linear;
+}
+
+.header-button:hover {
+    background-color: #ff730099;
+}
+
+.cards-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 349px;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+    margin-right: 31px;
+    margin-top: -80px;
+    padding: 10px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+}
+
+.card-title {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: Tinos;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.card-title span {
+    color: rgba(188, 144, 96, 1)
+}
+
+.card-desc {
+    text-align: center;
+    justify-content: center;
+    font-family: Tinos;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: rgba(101, 99, 99, 1);
+}
+
+.history {
+    margin-top: 166px;
+    padding-bottom: 200px;
+}
+
+.history-title {
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    width: 444px;
+    text-align: center;
+    margin-top: 21px;
+}
+
+.history-title span {
+    color: rgba(188, 144, 96, 1);
+}
+
+.history-desc {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(101, 99, 99, 1);
+    width: 444px;
+    text-align: center;
+}
+
+.history-number {
+    display: flex;
+    width: 444px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.number-item {
+    margin-right: 60px;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+    color: rgba(188, 144, 96, 1);
+}
+
+.number-item span {
+    display: block;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 1);
+}
+
+.history-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-images {
+    position: relative;
+}
+
+.images-1 {
+    position: absolute;
+    z-index: 999;
+    top: 39px;
+    left: -550px;
+}
+
+.images-2 {
+    position: absolute;
+    z-index: 999;
+    top: 200px;
+    left: -255px;
+}
+
+.images-3 {
+    position: absolute;
+    z-index: 998;
+    top: 0px;
+    left: -350px;
+}
+
+.black-block {
+    background-image: url(images/bg.png);
+    padding: 80px 0;
+}
+
+.left-title {
+    font-family: Tinos;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    color: rgba(214, 126, 52, 1);
+    margin-bottom: 20px;
+}
+
+.left-text {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.right-btn {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    background-color: #FF7400;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 18px;
+    transition: background-color 0.2s linear;
+}
+
+.right-btn:hover {
+    background-color: #ff7300b4;
+}
+
+.block-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dishes {
+    margin-bottom: 150px;
+}
+
+.dishes-title {
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    padding-top: 132px;
+    margin-bottom: 139px;
+}
+
+.dishes-title span {
+    color: rgba(214, 126, 52, 1);
+}
+
+.burgers {
+    display: flex;
+    justify-content: center;
+}
+
+.burger-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.burgers-img {
+    margin-right: 20px;
+}
+
+.burger-text {
+    font-family: Tinos;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    margin-left: 20px;
+}
+
+.menu {
+    background-image: url(images/bar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.menu-title {
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    color: #fff;
+    padding-top: 98px;
+    text-align: center;
+    padding-bottom: 138px;
+}
+
+.menu-item {
+    background-color: #fff;
+    text-align: center;
+    width: 33%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-right: 20px;
+}
+
+.menu-img {
+    border-radius: 50%;
+}
+
+.menu-text {
+    font-family: Tinos;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    padding-top: 16px;
+    padding-bottom: 17px;
+}
+
+.menu-subtext {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.menu-btn {
+    background-color: rgba(214, 126, 52, 1);
+    color: #fff;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    padding: 14px 67px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.menu-button {
+    margin-top: 20px;
+}
+
+.price-image {
+    position: absolute;
+    bottom: 0px;
+    right: 50px
+}
+
+.menu-image {
+    position: relative;
+}
+
+.price-420 {
+    position: absolute;
+    bottom: 33px;
+    right: 80px;
+    font-family: Cookie;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+}
+
+.comment {
+    background-color: rgba(229, 229, 229, 1);
+    padding-top: 104px;
+    padding-bottom: 139px;
+}
+
+.comment-text {
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+}
+
+.comment-img {
+    border-radius: 50%;
+}
+
+.comment-image {
+    text-align: center;
+}
+
+.comment-type {
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+.comment-name {
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+.galery-title {
+    padding-top: 100px;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.galery-title span {
+    color: rgba(214, 126, 52, 1);
+}
+
+.galery-content {
+    display: flex;
+    justify-content: center;
+}
+
+.galery-left {
+    margin-right: 20px;
+}
+
+.galery-down,
+.galery-up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cook {
+    padding-bottom: 100px;
+}
+
+.cook-title {
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+
+.cook-title span {
+    color: rgba(214, 126, 52, 1);
+}
+
+.cook-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    font-family: Open Sans;
+    background-color: #000;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 1500px) {
+    .galery-content {
+        display: block;
+    }
+
+    .img-gal,
+    .galery-up,
+    .galery-down {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-gal {
+        margin-bottom: 20px;
+    }
+
+    .galery-left {
+        margin-right: 0;
+    }
+}
