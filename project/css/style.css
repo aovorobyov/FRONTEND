@@ -50,6 +50,17 @@ body {
   margin-bottom: 155px;
 }
 
+.steps {
+  justify-self: end;
+  padding: 8px 20px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  background-color: #00ca51;
+  border-radius: 22px;
+}
+
 .cards {
   grid-column: 1 / -1;
   display: grid;
@@ -118,8 +129,6 @@ body {
 .card:not(.card-show):not(.card-finished):hover {
   box-shadow: 0 6px 16px rgba(140, 174, 200, 0.6);
 }
-
-/* Состояния карточек */
 
 .card-show {
   transform: rotateY(180deg);
